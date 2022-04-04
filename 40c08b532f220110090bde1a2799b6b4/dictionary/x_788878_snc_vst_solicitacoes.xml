@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Solicitações" max_length="40" name="x_788878_snc_vst_solicitacoes" type="collection"/>
+</database>
