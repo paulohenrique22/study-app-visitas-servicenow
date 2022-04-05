@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="Edit Button (Company)">f713871b2f220110090bde1a2799b63b</button>
+        <item_parameter display_value="Company fiscal_year">7313871b2f220110090bde1a2799b63a</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-04 18:52:47</sys_created_on>
+        <sys_id>b313871b2f220110090bde1a2799b64e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>7313871b2f220110090bde1a2799b63a</sys_name>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_b313871b2f220110090bde1a2799b64e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-04 18:52:47</sys_updated_on>
+        <ui_parameter display_value="Fiscal year">b313871b2f220110090bde1a2799b64b</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

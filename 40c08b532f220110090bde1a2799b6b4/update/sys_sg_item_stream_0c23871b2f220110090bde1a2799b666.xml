@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream">
+    <sys_sg_item_stream action="INSERT_OR_UPDATE">
+        <data_item display_value="Visitas Cadastro Visitantes">7713871b2f220110090bde1a2799b651</data_item>
+        <interleaved_field/>
+        <name>Cadastro Visitantes Item Stream</name>
+        <sys_class_name>sys_sg_item_stream</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-04 18:52:48</sys_created_on>
+        <sys_id>0c23871b2f220110090bde1a2799b666</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cadastro Visitantes Item Stream</sys_name>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name>sys_sg_item_stream_0c23871b2f220110090bde1a2799b666</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-04 18:52:48</sys_updated_on>
+        <table/>
+    </sys_sg_item_stream>
+</record_update>
