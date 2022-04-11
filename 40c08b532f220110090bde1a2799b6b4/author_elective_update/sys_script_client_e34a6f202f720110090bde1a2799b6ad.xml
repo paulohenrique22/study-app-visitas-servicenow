@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Antes de carregar</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   alert('AOOOOOOOOOOOOW');
+   jslog("ME:  The value of myVar = AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-08 19:00:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e34a6f202f720110090bde1a2799b6ad</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Antes de carregar</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name>sys_script_client_e34a6f202f720110090bde1a2799b6ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-08 19:02:05</sys_updated_on>
+        <table>x_788878_snc_vst_solicitacoes</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Visitas">40c08b532f220110090bde1a2799b6b4</application>
+        <file_path/>
+        <instance_id>fc7c1de7db281f047e55d5b0cf9619d6</instance_id>
+        <instance_name>dev51776</instance_name>
+        <name>sys_script_client_e34a6f202f720110090bde1a2799b6ad</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;active&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Antes de carregar&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+   alert('AOOOOOOOOOOOOW');
+   jslog("ME:  The value of myVar = AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-04-08 19:00:05&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;e34a6f202f720110090bde1a2799b6ad&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Antes de carregar&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Visitas" source="x_788878_snc_vst"&gt;40c08b532f220110090bde1a2799b6b4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Visitas"&gt;40c08b532f220110090bde1a2799b6b4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_e34a6f202f720110090bde1a2799b6ad&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-04-08 19:02:05&lt;/sys_updated_on&gt;&lt;table&gt;x_788878_snc_vst_solicitacoes&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-60016701</payload_hash>
+        <record_name>Antes de carregar</record_name>
+        <reverted_from/>
+        <source>620507d72f220110090bde1a2799b680</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-08 19:02:05</sys_created_on>
+        <sys_id>7a9bab602f720110090bde1a2799b68d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1800a8e15720000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-08 19:02:05</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>329bab60077201100f03cae5b515568d</update_guid>
+        <update_guid_history>329bab60077201100f03cae5b515568d:-60016701,b52b2b60d1720110d6702a66093f922f:-689716698</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-08 19:09:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>20f2fd41c6a24a96bacffb5a4b819064</sys_id>
+        <sys_metadata>e34a6f202f720110090bde1a2799b6ad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Antes de carregar</sys_name>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_parent display_value="Solicitações">3a824fd72f220110090bde1a2799b6f8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_scope_delete display_value="">047510566e9f401694a53ed0dc8a55e4</sys_scope_delete>
+        <sys_update_name>sys_script_client_e34a6f202f720110090bde1a2799b6ad</sys_update_name>
+        <sys_update_version display_value="sys_script_client_e34a6f202f720110090bde1a2799b6ad">7a9bab602f720110090bde1a2799b68d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-08 19:09:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

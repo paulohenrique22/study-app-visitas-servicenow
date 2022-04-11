@@ -1,0 +1,2995 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls>3fcdb4552fb24110090bde1a2799b6a2</acls>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>true</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-rome-06-23-2021__patch5-12-15-2021_01-04-2022_2221.zip</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Consulta CEP via REST</description>
+        <ih_action>true</ih_action>
+        <internal_name>viacep_rest</internal_name>
+        <label_cache>[{"name":"{{action.cep}}","label":"action➛cep","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[91b36735-5509-4780-93cf-396e793e9a4a].response_body}}","label":"step➛SOAP step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[a00dbcd5-2f26-44eb-9ce7-c1d4b57a4f1c].variable}}","label":"step➛XML Parser step➛variable","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[444db080-ca26-49c2-8861-c4f917761939].Envelope.Body.consultaCEPResponse.return.bairro}}","label":"step➛XML Parser step➛Envelope➛Body➛consultaCEPResponse➛return➛bairro","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[444db080-ca26-49c2-8861-c4f917761939].Envelope.Body.consultaCEPResponse.return.cidade}}","label":"step➛XML Parser step➛Envelope➛Body➛consultaCEPResponse➛return➛cidade","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[444db080-ca26-49c2-8861-c4f917761939].Envelope.Body.consultaCEPResponse.return.complemento2}}","label":"step➛XML Parser step➛Envelope➛Body➛consultaCEPResponse➛return➛complemento2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[444db080-ca26-49c2-8861-c4f917761939].Envelope.Body.consultaCEPResponse.return.end}}","label":"step➛XML Parser step➛Envelope➛Body➛consultaCEPResponse➛return➛end","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[444db080-ca26-49c2-8861-c4f917761939].Envelope.Body.consultaCEPResponse.return.uf}}","label":"step➛XML Parser step➛Envelope➛Body➛consultaCEPResponse➛return➛uf","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[6c4419f8-e077-425f-8740-6f7329e8ae24].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.complemento}}","label":"step➛JSON Parser step➛root➛complemento","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.bairro}}","label":"step➛JSON Parser step➛root➛bairro","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.localidade}}","label":"step➛JSON Parser step➛root➛localidade","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.uf}}","label":"step➛JSON Parser step➛root➛uf","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.logradouro}}","label":"step➛JSON Parser step➛root➛logradouro","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>1576815d2fb24110090bde1a2799b660</master_snapshot>
+        <name>VIACEP REST</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:13:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d4c8ad042fb20110090bde1a2799b6a3</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>VIACEP REST</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_d4c8ad042fb20110090bde1a2799b6a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:56:00</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=d4c8ad042fb20110090bde1a2799b6a3"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d4c8ad042fb20110090bde1a2799b6a3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>d4c8ad042fb20110090bde1a2799b6a3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>71dc21082fb20110090bde1a2799b661</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:57</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDf9dc21084fb201108e5ce2ef9b38104c":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDf9dc21084fb201108e5ce2ef9b38104c.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"e22a634c-27eb-4a24-8556-ef6bb94680b8\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDf9dc21084fb201108e5ce2ef9b38104c\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">31dc21082fb20110090bde1a2799b64f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>d4c8ad042fb20110090bde1a2799b6a3</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>bddc21082fb20110090bde1a2799b660</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">b9dc21082fb20110090bde1a2799b655</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d4c8ad042fb20110090bde1a2799b6a3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>bairro</field>
+        <id>d4c8ad042fb20110090bde1a2799b6a3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:38:08</sys_created_on>
+        <sys_id>5a6ea5482fb20110090bde1a2799b6f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:38:08</sys_updated_on>
+        <table>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</table>
+        <value>{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.bairro}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>localidade</field>
+        <id>d4c8ad042fb20110090bde1a2799b6a3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:38:08</sys_created_on>
+        <sys_id>1e6ea5482fb20110090bde1a2799b6f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:38:08</sys_updated_on>
+        <table>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</table>
+        <value>{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.localidade}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>logradouro</field>
+        <id>d4c8ad042fb20110090bde1a2799b6a3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:38:08</sys_created_on>
+        <sys_id>de6ea5482fb20110090bde1a2799b6f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:38:08</sys_updated_on>
+        <table>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</table>
+        <value>{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.logradouro}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>uf</field>
+        <id>d4c8ad042fb20110090bde1a2799b6a3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:38:08</sys_created_on>
+        <sys_id>966ea5482fb20110090bde1a2799b6f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:38:08</sys_updated_on>
+        <table>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</table>
+        <value>{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.uf}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>d4c8ad042fb20110090bde1a2799b6a3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>3ddc21082fb20110090bde1a2799b660</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <table>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>d4c8ad042fb20110090bde1a2799b6a3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>79dc21082fb20110090bde1a2799b660</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <table>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=d4c8ad042fb20110090bde1a2799b6a3^sys_idNOT IN6ddc21082fb20110090bde1a2799b61e,c2cdad082fb20110090bde1a2799b67b"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="VIACEP REST">d4c8ad042fb20110090bde1a2799b6a3</action>
+        <cid>6c4419f8-e077-425f-8740-6f7329e8ae24</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:15</sys_created_on>
+        <sys_id>6ddc21082fb20110090bde1a2799b61e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:32:51</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6ddc21082fb20110090bde1a2799b61e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ddc21082fb20110090bde1a2799b61e</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>35dc21082fb20110090bde1a2799b648</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <value>https://viacep.com.br</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ddc21082fb20110090bde1a2799b61e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>39dc21082fb20110090bde1a2799b647</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ddc21082fb20110090bde1a2799b61e</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>71dc21082fb20110090bde1a2799b648</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ddc21082fb20110090bde1a2799b61e</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>75dc21082fb20110090bde1a2799b647</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ddc21082fb20110090bde1a2799b61e</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:31</sys_created_on>
+        <sys_id>a9ec61082fb20110090bde1a2799b67a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:31</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ddc21082fb20110090bde1a2799b61e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>b9dc21082fb20110090bde1a2799b648</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ddc21082fb20110090bde1a2799b61e</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>bddc21082fb20110090bde1a2799b647</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:32:51</sys_updated_on>
+        <value/>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ddc21082fb20110090bde1a2799b61e</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:31</sys_created_on>
+        <sys_id>e5ec61082fb20110090bde1a2799b67a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:31</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ddc21082fb20110090bde1a2799b61e</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>f5dc21082fb20110090bde1a2799b648</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ddc21082fb20110090bde1a2799b61e</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>f9dc21082fb20110090bde1a2799b647</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <value>158c2dc42fb20110090bde1a2799b68b</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_6ddc21082fb20110090bde1a2799b61e^id=6ddc21082fb20110090bde1a2799b61e"/>
+    <sys_element_mapping action="delete_multiple" query="id=6ddc21082fb20110090bde1a2799b61e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>6ddc21082fb20110090bde1a2799b61e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>31dc21082fb20110090bde1a2799b647</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>6ddc21082fb20110090bde1a2799b61e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>7ddc21082fb20110090bde1a2799b646</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>6ddc21082fb20110090bde1a2799b61e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>b9dc21082fb20110090bde1a2799b646</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>6ddc21082fb20110090bde1a2799b61e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>35dc21082fb20110090bde1a2799b646</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>6ddc21082fb20110090bde1a2799b61e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>f1dc21082fb20110090bde1a2799b647</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>6ddc21082fb20110090bde1a2799b61e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:31</sys_created_on>
+        <sys_id>a1ec61082fb20110090bde1a2799b67a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>6ddc21082fb20110090bde1a2799b61e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>71dc21082fb20110090bde1a2799b646</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>6ddc21082fb20110090bde1a2799b61e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:31</sys_created_on>
+        <sys_id>65ec61082fb20110090bde1a2799b67a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>6ddc21082fb20110090bde1a2799b61e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>f5dc21082fb20110090bde1a2799b646</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:32:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>/ws/{{action.cep}}/json/</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>6ddc21082fb20110090bde1a2799b61e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>bddc21082fb20110090bde1a2799b645</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=6ddc21082fb20110090bde1a2799b61e^sys_idNOT INe1dc21082fb20110090bde1a2799b63a"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=1c8cfb0d-9a14-4175-8809-dfc73978f833</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">6ddc21082fb20110090bde1a2799b61e</model>
+        <model_id>6ddc21082fb20110090bde1a2799b61e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_6ddc21082fb20110090bde1a2799b61e</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:15</sys_created_on>
+        <sys_id>e1dc21082fb20110090bde1a2799b63a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_6ddc21082fb20110090bde1a2799b61e^sys_idNOT INf1dc21082fb20110090bde1a2799b63f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_6ddc21082fb20110090bde1a2799b61e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:15</sys_created_on>
+        <sys_id>f1dc21082fb20110090bde1a2799b63f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="VIACEP REST">d4c8ad042fb20110090bde1a2799b6a3</action>
+        <cid>ce3aa32e-865d-44e1-95f5-9da7a061a7be</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:35:23</sys_created_on>
+        <sys_id>c2cdad082fb20110090bde1a2799b67b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:35:23</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c2cdad082fb20110090bde1a2799b67b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c2cdad082fb20110090bde1a2799b67b</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:35:23</sys_created_on>
+        <sys_id>96cdad082fb20110090bde1a2799b68a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:35:23</sys_updated_on>
+        <value>{
+  "cep": "13203-250",
+  "logradouro": "Rua Joaquim de Almeida Ramos",
+  "complemento": "",
+  "bairro": "Vila Santa Maria",
+  "localidade": "Jundiaí",
+  "uf": "SP",
+  "ibge": "3525904",
+  "gia": "4078",
+  "ddd": "11",
+  "siafi": "6619"
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c2cdad082fb20110090bde1a2799b67b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:35:23</sys_created_on>
+        <sys_id>d2cdad082fb20110090bde1a2799b68a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:35:23</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"cep","children":[],"type":"string","jpath":"$.cep","previewValue":"13203-250"},{"name":"logradouro","children":[],"type":"string","jpath":"$.logradouro","previewValue":"Rua Joaquim de Almeida Ramos"},{"name":"complemento","children":[],"type":"string","jpath":"$.complemento","previewValue":""},{"name":"bairro","children":[],"type":"string","jpath":"$.bairro","previewValue":"Vila Santa Maria"},{"name":"localidade","children":[],"type":"string","jpath":"$.localidade","previewValue":"Jundiaí"},{"name":"uf","children":[],"type":"string","jpath":"$.uf","previewValue":"SP"},{"name":"ibge","children":[],"type":"string","jpath":"$.ibge","previewValue":"3525904"},{"name":"gia","children":[],"type":"string","jpath":"$.gia","previewValue":"4078"},{"name":"ddd","children":[],"type":"string","jpath":"$.ddd","previewValue":"11"},{"name":"siafi","children":[],"type":"string","jpath":"$.siafi","previewValue":"6619"}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_c2cdad082fb20110090bde1a2799b67b^id=c2cdad082fb20110090bde1a2799b67b"/>
+    <sys_element_mapping action="delete_multiple" query="id=c2cdad082fb20110090bde1a2799b67b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>c2cdad082fb20110090bde1a2799b67b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:35:23</sys_created_on>
+        <sys_id>52cdad082fb20110090bde1a2799b68a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:35:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>c2cdad082fb20110090bde1a2799b67b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:35:23</sys_created_on>
+        <sys_id>cacdad082fb20110090bde1a2799b689</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:35:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[6c4419f8-e077-425f-8740-6f7329e8ae24].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>c2cdad082fb20110090bde1a2799b67b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:35:23</sys_created_on>
+        <sys_id>9ecdad082fb20110090bde1a2799b689</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:35:23</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=c2cdad082fb20110090bde1a2799b67b^sys_idNOT IN06cdad082fb20110090bde1a2799b681"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD8ecdad089db2011083f60b4b8919127e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=c040864e-11f2-4aed-b167-e2b9327d7bae</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">c2cdad082fb20110090bde1a2799b67b</model>
+        <model_id>c2cdad082fb20110090bde1a2799b67b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_c2cdad082fb20110090bde1a2799b67b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:35:23</sys_created_on>
+        <sys_id>06cdad082fb20110090bde1a2799b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:35:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_c2cdad082fb20110090bde1a2799b67b^sys_idNOT IN86cdad082fb20110090bde1a2799b686"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_c2cdad082fb20110090bde1a2799b67b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:35:23</sys_created_on>
+        <sys_id>86cdad082fb20110090bde1a2799b686</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:35:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=d4c8ad042fb20110090bde1a2799b6a3^sys_idNOT INc5ec61082fb20110090bde1a2799b632"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e87b7a1c-8714-44be-aca2-a66f5f971176</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>cep</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>cep</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="VIACEP REST">d4c8ad042fb20110090bde1a2799b6a3</model>
+        <model_id>d4c8ad042fb20110090bde1a2799b6a3</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_d4c8ad042fb20110090bde1a2799b6a3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:29</sys_created_on>
+        <sys_id>c5ec61082fb20110090bde1a2799b632</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=d4c8ad042fb20110090bde1a2799b6a3^sys_idNOT IN273e25482fb20110090bde1a2799b645,31dc21082fb20110090bde1a2799b64f,773e25482fb20110090bde1a2799b64b,a33e25482fb20110090bde1a2799b639,b9dc21082fb20110090bde1a2799b655,e33e25482fb20110090bde1a2799b63f"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=01102053-195b-456c-8430-66e819d30f4e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>localidade</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>localidade</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="VIACEP REST">d4c8ad042fb20110090bde1a2799b6a3</model>
+        <model_id>d4c8ad042fb20110090bde1a2799b6a3</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:37:24</sys_created_on>
+        <sys_id>273e25482fb20110090bde1a2799b645</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:38:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDf9dc21084fb201108e5ce2ef9b38104c,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=e22a634c-27eb-4a24-8556-ef6bb94680b8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="VIACEP REST">d4c8ad042fb20110090bde1a2799b6a3</model>
+        <model_id>d4c8ad042fb20110090bde1a2799b6a3</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>31dc21082fb20110090bde1a2799b64f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=bc96e05d-4ae9-4d75-ae17-1c2695389353</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>uf</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>uf</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="VIACEP REST">d4c8ad042fb20110090bde1a2799b6a3</model>
+        <model_id>d4c8ad042fb20110090bde1a2799b6a3</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:37:24</sys_created_on>
+        <sys_id>773e25482fb20110090bde1a2799b64b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:38:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=33364b6e-38c5-4e79-9804-ba7518279654</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>logradouro</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>logradouro</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="VIACEP REST">d4c8ad042fb20110090bde1a2799b6a3</model>
+        <model_id>d4c8ad042fb20110090bde1a2799b6a3</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:37:24</sys_created_on>
+        <sys_id>a33e25482fb20110090bde1a2799b639</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:38:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=4ca9f8a9-b51c-44ed-80d3-3a9ab7ef7d8a,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="VIACEP REST">d4c8ad042fb20110090bde1a2799b6a3</model>
+        <model_id>d4c8ad042fb20110090bde1a2799b6a3</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>b9dc21082fb20110090bde1a2799b655</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=d74027f5-072e-475f-8e38-9eb4b8206696</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>bairro</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>bairro</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="VIACEP REST">d4c8ad042fb20110090bde1a2799b6a3</model>
+        <model_id>d4c8ad042fb20110090bde1a2799b6a3</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:37:24</sys_created_on>
+        <sys_id>e33e25482fb20110090bde1a2799b63f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:38:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=d4c8ad042fb20110090bde1a2799b6a3^sys_idNOT INf1dc21082fb20110090bde1a2799b66f"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="VIACEP REST">d4c8ad042fb20110090bde1a2799b6a3</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>f1dc21082fb20110090bde1a2799b66f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_d4c8ad042fb20110090bde1a2799b6a3^sys_idNOT IN49ec61082fb20110090bde1a2799b637"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>cep</element>
+        <help/>
+        <hint/>
+        <label>cep</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_d4c8ad042fb20110090bde1a2799b6a3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:30</sys_created_on>
+        <sys_id>49ec61082fb20110090bde1a2799b637</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3^sys_idNOT IN2f3e25482fb20110090bde1a2799b63d,39dc21082fb20110090bde1a2799b65d,6f3e25482fb20110090bde1a2799b643,bf3e25482fb20110090bde1a2799b649,f1dc21082fb20110090bde1a2799b654,ff3e25482fb20110090bde1a2799b64f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>logradouro</element>
+        <help/>
+        <hint/>
+        <label>logradouro</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:37:24</sys_created_on>
+        <sys_id>2f3e25482fb20110090bde1a2799b63d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:37:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>39dc21082fb20110090bde1a2799b65d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>bairro</element>
+        <help/>
+        <hint/>
+        <label>bairro</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:37:24</sys_created_on>
+        <sys_id>6f3e25482fb20110090bde1a2799b643</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:37:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>localidade</element>
+        <help/>
+        <hint/>
+        <label>localidade</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:37:24</sys_created_on>
+        <sys_id>bf3e25482fb20110090bde1a2799b649</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:37:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:31:16</sys_created_on>
+        <sys_id>f1dc21082fb20110090bde1a2799b654</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:31:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>uf</element>
+        <help/>
+        <hint/>
+        <label>uf</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_d4c8ad042fb20110090bde1a2799b6a3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-06 20:37:24</sys_created_on>
+        <sys_id>ff3e25482fb20110090bde1a2799b64f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-06 20:37:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=d4c8ad042fb20110090bde1a2799b6a3^sys_idNOT IN9676c15d2fb24110090bde1a2799b6f6"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="VIACEP REST">d4c8ad042fb20110090bde1a2799b6a3</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"9676c15d2fb24110090bde1a2799b6f6","name":"plan","plan_signature":null}}</plan>
+        <snapshot>b176815d2fb24110090bde1a2799b6f4</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:56:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9676c15d2fb24110090bde1a2799b6f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:56:03</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Consulta CEP via REST</description>
+        <internal_name>viacep_rest</internal_name>
+        <label_cache>[{"name":"{{action.cep}}","label":"action➛cep","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[91b36735-5509-4780-93cf-396e793e9a4a].response_body}}","label":"step➛SOAP step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[a00dbcd5-2f26-44eb-9ce7-c1d4b57a4f1c].variable}}","label":"step➛XML Parser step➛variable","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[444db080-ca26-49c2-8861-c4f917761939].Envelope.Body.consultaCEPResponse.return.bairro}}","label":"step➛XML Parser step➛Envelope➛Body➛consultaCEPResponse➛return➛bairro","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[444db080-ca26-49c2-8861-c4f917761939].Envelope.Body.consultaCEPResponse.return.cidade}}","label":"step➛XML Parser step➛Envelope➛Body➛consultaCEPResponse➛return➛cidade","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[444db080-ca26-49c2-8861-c4f917761939].Envelope.Body.consultaCEPResponse.return.complemento2}}","label":"step➛XML Parser step➛Envelope➛Body➛consultaCEPResponse➛return➛complemento2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[444db080-ca26-49c2-8861-c4f917761939].Envelope.Body.consultaCEPResponse.return.end}}","label":"step➛XML Parser step➛Envelope➛Body➛consultaCEPResponse➛return➛end","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[444db080-ca26-49c2-8861-c4f917761939].Envelope.Body.consultaCEPResponse.return.uf}}","label":"step➛XML Parser step➛Envelope➛Body➛consultaCEPResponse➛return➛uf","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[6c4419f8-e077-425f-8740-6f7329e8ae24].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.complemento}}","label":"step➛JSON Parser step➛root➛complemento","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.bairro}}","label":"step➛JSON Parser step➛root➛bairro","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.localidade}}","label":"step➛JSON Parser step➛root➛localidade","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.uf}}","label":"step➛JSON Parser step➛root➛uf","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.logradouro}}","label":"step➛JSON Parser step➛root➛logradouro","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>VIACEP REST</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="VIACEP REST">d4c8ad042fb20110090bde1a2799b6a3</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1576815d2fb24110090bde1a2799b660</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:57</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=1576815d2fb24110090bde1a2799b660"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1576815d2fb24110090bde1a2799b660"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>1576815d2fb24110090bde1a2799b660</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>6976815d2fb24110090bde1a2799b6f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD2d76815dccb241103c9ec8295b7e29c0":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD2d76815dccb241103c9ec8295b7e29c0.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"e22a634c-27eb-4a24-8556-ef6bb94680b8\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD2d76815dccb241103c9ec8295b7e29c0\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">a176815d2fb24110090bde1a2799b6c3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>1576815d2fb24110090bde1a2799b660</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>a576815d2fb24110090bde1a2799b6f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">6576815d2fb24110090bde1a2799b6ca</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1576815d2fb24110090bde1a2799b660"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>bairro</field>
+        <id>1576815d2fb24110090bde1a2799b660</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>2976815d2fb24110090bde1a2799b6ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</table>
+        <value>{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.bairro}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>localidade</field>
+        <id>1576815d2fb24110090bde1a2799b660</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>e976815d2fb24110090bde1a2799b6ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</table>
+        <value>{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.localidade}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>logradouro</field>
+        <id>1576815d2fb24110090bde1a2799b660</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>ad76815d2fb24110090bde1a2799b6ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</table>
+        <value>{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.logradouro}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>uf</field>
+        <id>1576815d2fb24110090bde1a2799b660</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>6576815d2fb24110090bde1a2799b6ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</table>
+        <value>{{step[ce3aa32e-865d-44e1-95f5-9da7a061a7be].root.uf}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>1576815d2fb24110090bde1a2799b660</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>2576815d2fb24110090bde1a2799b6f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>1576815d2fb24110090bde1a2799b660</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>6176815d2fb24110090bde1a2799b6f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=1576815d2fb24110090bde1a2799b660^sys_idNOT IN1176815d2fb24110090bde1a2799b67b,d976815d2fb24110090bde1a2799b6af"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="VIACEP REST">1576815d2fb24110090bde1a2799b660</action>
+        <cid>6c4419f8-e077-425f-8740-6f7329e8ae24</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>1176815d2fb24110090bde1a2799b67b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1176815d2fb24110090bde1a2799b67b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1176815d2fb24110090bde1a2799b67b</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>1576815d2fb24110090bde1a2799b6ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1176815d2fb24110090bde1a2799b67b</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>1976815d2fb24110090bde1a2799b6aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1176815d2fb24110090bde1a2799b67b</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>5176815d2fb24110090bde1a2799b6ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1176815d2fb24110090bde1a2799b67b</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>5576815d2fb24110090bde1a2799b6aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <value>158c2dc42fb20110090bde1a2799b68b</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1176815d2fb24110090bde1a2799b67b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>9176815d2fb24110090bde1a2799b6aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1176815d2fb24110090bde1a2799b67b</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>9d76815d2fb24110090bde1a2799b6aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <value>https://viacep.com.br</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1176815d2fb24110090bde1a2799b67b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>d576815d2fb24110090bde1a2799b6ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1176815d2fb24110090bde1a2799b67b</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>d976815d2fb24110090bde1a2799b6aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1176815d2fb24110090bde1a2799b67b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>dd76815d2fb24110090bde1a2799b6a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_1176815d2fb24110090bde1a2799b67b^id=1176815d2fb24110090bde1a2799b67b"/>
+    <sys_element_mapping action="delete_multiple" query="id=1176815d2fb24110090bde1a2799b67b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>1176815d2fb24110090bde1a2799b67b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>d576815d2fb24110090bde1a2799b6a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>1176815d2fb24110090bde1a2799b67b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>1576815d2fb24110090bde1a2799b6a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>1176815d2fb24110090bde1a2799b67b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>5176815d2fb24110090bde1a2799b6a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>1176815d2fb24110090bde1a2799b67b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>1976815d2fb24110090bde1a2799b6a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>1176815d2fb24110090bde1a2799b67b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>5d76815d2fb24110090bde1a2799b6a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>1176815d2fb24110090bde1a2799b67b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>9d76815d2fb24110090bde1a2799b6a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>1176815d2fb24110090bde1a2799b67b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>5576815d2fb24110090bde1a2799b6a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>1176815d2fb24110090bde1a2799b67b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>9976815d2fb24110090bde1a2799b6a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>1176815d2fb24110090bde1a2799b67b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>d976815d2fb24110090bde1a2799b6a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>/ws/{{action.cep}}/json/</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>1176815d2fb24110090bde1a2799b67b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>9176815d2fb24110090bde1a2799b6a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=1176815d2fb24110090bde1a2799b67b^sys_idNOT IN1576815d2fb24110090bde1a2799b682"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=1c8cfb0d-9a14-4175-8809-dfc73978f833</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">1176815d2fb24110090bde1a2799b67b</model>
+        <model_id>1176815d2fb24110090bde1a2799b67b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_1176815d2fb24110090bde1a2799b67b</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>1576815d2fb24110090bde1a2799b682</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_1176815d2fb24110090bde1a2799b67b^sys_idNOT IN9d76815d2fb24110090bde1a2799b6a0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_1176815d2fb24110090bde1a2799b67b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>9d76815d2fb24110090bde1a2799b6a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="VIACEP REST">1576815d2fb24110090bde1a2799b660</action>
+        <cid>ce3aa32e-865d-44e1-95f5-9da7a061a7be</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>d976815d2fb24110090bde1a2799b6af</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d976815d2fb24110090bde1a2799b6af"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d976815d2fb24110090bde1a2799b6af</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>ad76815d2fb24110090bde1a2799b6be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <value>{
+  "cep": "13203-250",
+  "logradouro": "Rua Joaquim de Almeida Ramos",
+  "complemento": "",
+  "bairro": "Vila Santa Maria",
+  "localidade": "Jundiaí",
+  "uf": "SP",
+  "ibge": "3525904",
+  "gia": "4078",
+  "ddd": "11",
+  "siafi": "6619"
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d976815d2fb24110090bde1a2799b6af</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>e976815d2fb24110090bde1a2799b6be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"cep","children":[],"type":"string","jpath":"$.cep","previewValue":"13203-250"},{"name":"logradouro","children":[],"type":"string","jpath":"$.logradouro","previewValue":"Rua Joaquim de Almeida Ramos"},{"name":"complemento","children":[],"type":"string","jpath":"$.complemento","previewValue":""},{"name":"bairro","children":[],"type":"string","jpath":"$.bairro","previewValue":"Vila Santa Maria"},{"name":"localidade","children":[],"type":"string","jpath":"$.localidade","previewValue":"Jundiaí"},{"name":"uf","children":[],"type":"string","jpath":"$.uf","previewValue":"SP"},{"name":"ibge","children":[],"type":"string","jpath":"$.ibge","previewValue":"3525904"},{"name":"gia","children":[],"type":"string","jpath":"$.gia","previewValue":"4078"},{"name":"ddd","children":[],"type":"string","jpath":"$.ddd","previewValue":"11"},{"name":"siafi","children":[],"type":"string","jpath":"$.siafi","previewValue":"6619"}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_d976815d2fb24110090bde1a2799b6af^id=d976815d2fb24110090bde1a2799b6af"/>
+    <sys_element_mapping action="delete_multiple" query="id=d976815d2fb24110090bde1a2799b6af"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>d976815d2fb24110090bde1a2799b6af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>6976815d2fb24110090bde1a2799b6be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>d976815d2fb24110090bde1a2799b6af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>e176815d2fb24110090bde1a2799b6be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[6c4419f8-e077-425f-8740-6f7329e8ae24].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>d976815d2fb24110090bde1a2799b6af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>a576815d2fb24110090bde1a2799b6be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=d976815d2fb24110090bde1a2799b6af^sys_idNOT INa976815d2fb24110090bde1a2799b6b5"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD1576815d85b24110a75a96f7909c42b2,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=c040864e-11f2-4aed-b167-e2b9327d7bae</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">d976815d2fb24110090bde1a2799b6af</model>
+        <model_id>d976815d2fb24110090bde1a2799b6af</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_d976815d2fb24110090bde1a2799b6af</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>a976815d2fb24110090bde1a2799b6b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_d976815d2fb24110090bde1a2799b6af^sys_idNOT INad76815d2fb24110090bde1a2799b6ba"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_d976815d2fb24110090bde1a2799b6af</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>ad76815d2fb24110090bde1a2799b6ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=1576815d2fb24110090bde1a2799b660^sys_idNOT INdd76815d2fb24110090bde1a2799b663"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e87b7a1c-8714-44be-aca2-a66f5f971176</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>cep</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>cep</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="VIACEP REST">1576815d2fb24110090bde1a2799b660</model>
+        <model_id>1576815d2fb24110090bde1a2799b660</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_1576815d2fb24110090bde1a2799b660</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>dd76815d2fb24110090bde1a2799b663</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=1576815d2fb24110090bde1a2799b660^sys_idNOT IN2576815d2fb24110090bde1a2799b6d4,6576815d2fb24110090bde1a2799b6ca,6d76815d2fb24110090bde1a2799b6e6,a176815d2fb24110090bde1a2799b6c3,a976815d2fb24110090bde1a2799b6e0,e576815d2fb24110090bde1a2799b6da"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=33364b6e-38c5-4e79-9804-ba7518279654</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>logradouro</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>logradouro</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="VIACEP REST">1576815d2fb24110090bde1a2799b660</model>
+        <model_id>1576815d2fb24110090bde1a2799b660</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>2576815d2fb24110090bde1a2799b6d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=4ca9f8a9-b51c-44ed-80d3-3a9ab7ef7d8a,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="VIACEP REST">1576815d2fb24110090bde1a2799b660</model>
+        <model_id>1576815d2fb24110090bde1a2799b660</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>6576815d2fb24110090bde1a2799b6ca</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=bc96e05d-4ae9-4d75-ae17-1c2695389353</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>uf</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>uf</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="VIACEP REST">1576815d2fb24110090bde1a2799b660</model>
+        <model_id>1576815d2fb24110090bde1a2799b660</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>6d76815d2fb24110090bde1a2799b6e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD2d76815dccb241103c9ec8295b7e29c0,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=e22a634c-27eb-4a24-8556-ef6bb94680b8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="VIACEP REST">1576815d2fb24110090bde1a2799b660</model>
+        <model_id>1576815d2fb24110090bde1a2799b660</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>a176815d2fb24110090bde1a2799b6c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=01102053-195b-456c-8430-66e819d30f4e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>localidade</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>localidade</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="VIACEP REST">1576815d2fb24110090bde1a2799b660</model>
+        <model_id>1576815d2fb24110090bde1a2799b660</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>a976815d2fb24110090bde1a2799b6e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=d74027f5-072e-475f-8e38-9eb4b8206696</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>bairro</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>bairro</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="VIACEP REST">1576815d2fb24110090bde1a2799b660</model>
+        <model_id>1576815d2fb24110090bde1a2799b660</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>e576815d2fb24110090bde1a2799b6da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=1576815d2fb24110090bde1a2799b660^sys_idNOT IN2976815d2fb24110090bde1a2799b6f3"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="VIACEP REST">1576815d2fb24110090bde1a2799b660</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:56:00</sys_created_on>
+        <sys_id>2976815d2fb24110090bde1a2799b6f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:56:00</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_1576815d2fb24110090bde1a2799b660^sys_idNOT IN5576815d2fb24110090bde1a2799b678"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>cep</element>
+        <help/>
+        <hint/>
+        <label>cep</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_1576815d2fb24110090bde1a2799b660</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:58</sys_created_on>
+        <sys_id>5576815d2fb24110090bde1a2799b678</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660^sys_idNOT IN2176815d2fb24110090bde1a2799b6d9,6976815d2fb24110090bde1a2799b6eb,6d76815d2fb24110090bde1a2799b6d2,a576815d2fb24110090bde1a2799b6e5,ad76815d2fb24110090bde1a2799b6c8,e176815d2fb24110090bde1a2799b6df"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>logradouro</element>
+        <help/>
+        <hint/>
+        <label>logradouro</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>2176815d2fb24110090bde1a2799b6d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>uf</element>
+        <help/>
+        <hint/>
+        <label>uf</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>6976815d2fb24110090bde1a2799b6eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>6d76815d2fb24110090bde1a2799b6d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>localidade</element>
+        <help/>
+        <hint/>
+        <label>localidade</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>a576815d2fb24110090bde1a2799b6e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>ad76815d2fb24110090bde1a2799b6c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>bairro</element>
+        <help/>
+        <hint/>
+        <label>bairro</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1576815d2fb24110090bde1a2799b660</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-10 14:55:59</sys_created_on>
+        <sys_id>e176815d2fb24110090bde1a2799b6df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-10 14:55:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>d4c8ad042fb20110090bde1a2799b6a3</sys_id>
+        <latest_snapshot>1576815d2fb24110090bde1a2799b660</latest_snapshot>
+    </sys_hub_action_type_definition>
+</record_update>
