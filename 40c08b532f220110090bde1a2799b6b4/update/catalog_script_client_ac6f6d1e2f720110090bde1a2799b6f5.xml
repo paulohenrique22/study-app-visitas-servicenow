@@ -22,37 +22,37 @@
         if (newValue != '') {
             //current date
             //Existe a funcao g_user_date_time_format e g_user_date_format
-
+            //
             var currentDateObj = new Date(); //Formato Sun 20 Feb 2022 23:09:01
             var currentDateStr = formatDate(currentDateObj, g_user_date_time_format);
             var currentDateNum = getDateFromFormat(currentDateStr, g_user_date_time_format);
 
             //get start date
-            var startDateStr = g_form.getValue('data_da_entrada');
+            var startDateStr = g_form.getValue('u_start_date');
             var startDateNum = getDateFromFormat(startDateStr, g_user_date_time_format);
 
             //get end date
-            var endDateStr = g_form.getValue('data_da_saida');
+            var endDateStr = g_form.getValue('u_end_date');
             var endDateNum = getDateFromFormat(endDateStr, g_user_date_time_format);
 
             if (endDateNum <= currentDateNum) {
                 //alert('Por gentileza, coloque a data no futuro !.'); //PopUp
                 //g_form.showErrorBox('right','Você não pode colocar a data no passado !'); //Caixa de Dialog
-                g_form.clearValue('data_da_saida');
+                g_form.clearValue('u_end_date');
 
                 //Apresenta Abaixo do Campo no Formulário
-                g_form.showFieldMsg('data_da_saida', 'Por gentileza, coloque a data no futuro !.', 'error');
-                g_form.setValue('data_da_saida', '');
+                g_form.showFieldMsg('u_end_date', 'Por gentileza, coloque a data no futuro !.', 'error');
+                g_form.setValue('u_end_date', '');
             }
 
             if (endDateNum <= startDateNum) {
                 //alert('Por gentileza, coloque a data no futuro !.'); //PopUp
-                //g_form.showErrorBox('right','Você não pode colocar a data no passado !'); //Caixa de Dialog
-                g_form.clearValue('data_da_saida');
+                // g_form.showErrorBox('right','Você não pode colocar a data no passado !'); //Caixa de Dialog
+                g_form.clearValue('u_end_date');
 
                 //Apresenta Abaixo do Campo no Formulário
-                g_form.showFieldMsg('data_da_saida', 'Por gentileza, a data de saída deve ser maior que a data de entrada !.', 'error');
-                g_form.setValue('data_da_saida', '');
+                g_form.showFieldMsg('u_end_date', 'Por gentileza, a data de saída deve ser maior que a data de entrada !.', 'error');
+                g_form.setValue('u_end_date', '');
             }
         }
     }
@@ -64,7 +64,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ac6f6d1e2f720110090bde1a2799b6f5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Validar Data de Saida</sys_name>
         <sys_overrides/>
         <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
@@ -72,7 +72,7 @@
         <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
         <sys_update_name>catalog_script_client_ac6f6d1e2f720110090bde1a2799b6f5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-04-13 20:29:57</sys_updated_on>
+        <sys_updated_on>2022-04-14 19:32:53</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

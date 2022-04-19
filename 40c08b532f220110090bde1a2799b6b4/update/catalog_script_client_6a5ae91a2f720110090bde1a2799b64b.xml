@@ -19,6 +19,7 @@
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
     if (!isLoading) {
+		
         if (newValue != '') {
             //current date
             //Existe a funcao g_user_date_time_format e g_user_date_format
@@ -28,17 +29,17 @@
             var currentDateNum = getDateFromFormat(currentDateStr, g_user_date_time_format);
 
             //get start date
-            var startDateStr = g_form.getValue('data_da_entrada');
+            var startDateStr = g_form.getValue('u_start_date');
             var startDateNum = getDateFromFormat(startDateStr, g_user_date_time_format);
 
             if (startDateNum <= currentDateNum) {
                 //alert('Por gentileza, coloque a data no futuro !.'); //PopUp
                 //g_form.showErrorBox('right','Você não pode colocar a data no passado !'); //Caixa de Dialog
-                g_form.clearValue('data_da_entrada');
+                g_form.clearValue('u_start_date');
 
                 //Apresenta Abaixo do Campo no Formulário
-                g_form.showFieldMsg('data_da_entrada', 'Por gentileza, coloque a data no futuro !.', 'error');
-                g_form.setValue('data_da_entrada', '');
+                g_form.showFieldMsg('u_start_date', 'Por gentileza, coloque a data no futuro !.', 'error');
+                g_form.setValue('u_start_date', '');
             }
         }
     }
@@ -49,7 +50,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6a5ae91a2f720110090bde1a2799b64b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Validar Data de Entrada</sys_name>
         <sys_overrides/>
         <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
@@ -57,7 +58,7 @@
         <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
         <sys_update_name>catalog_script_client_6a5ae91a2f720110090bde1a2799b64b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-04-13 20:28:00</sys_updated_on>
+        <sys_updated_on>2022-04-14 19:08:50</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
