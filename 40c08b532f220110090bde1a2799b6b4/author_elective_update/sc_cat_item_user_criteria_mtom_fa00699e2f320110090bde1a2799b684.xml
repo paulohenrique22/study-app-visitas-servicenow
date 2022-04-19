@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="DELETE">
+        <sc_cat_item display_value="Solicitação de Visita">114715962f320110090bde1a2799b677</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-13 19:21:41</sys_created_on>
+        <sys_id>fa00699e2f320110090bde1a2799b684</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Solicitação de Visita.Any User</sys_name>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_fa00699e2f320110090bde1a2799b684</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-13 19:21:41</sys_updated_on>
+        <user_criteria display_value="Any User">fb1166d64fff0200086eeed18110c7ab</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Visitas">40c08b532f220110090bde1a2799b6b4</application>
+        <file_path/>
+        <instance_id>fc7c1de7db281f047e55d5b0cf9619d6</instance_id>
+        <instance_name>dev51776</instance_name>
+        <name>sc_cat_item_user_criteria_mtom_fa00699e2f320110090bde1a2799b684</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom"><sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Solicitação de Visita">114715962f320110090bde1a2799b677</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-04-13 19:21:41</sys_created_on><sys_id>fa00699e2f320110090bde1a2799b684</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Solicitação de Visita.Any User</sys_name><sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package><sys_policy/><sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope><sys_update_name>sc_cat_item_user_criteria_mtom_fa00699e2f320110090bde1a2799b684</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-04-13 19:21:41</sys_updated_on><user_criteria display_value="Any User">fb1166d64fff0200086eeed18110c7ab</user_criteria></sc_cat_item_user_criteria_mtom></record_update>]]></payload>
+        <payload_hash>1682981875</payload_hash>
+        <record_name>Solicitação de Visita.Any User</record_name>
+        <reverted_from/>
+        <source>620507d72f220110090bde1a2799b680</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-13 19:21:41</sys_created_on>
+        <sys_id>7a00699e2f320110090bde1a2799b689</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>180245fd4210000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-13 19:21:41</sys_updated_on>
+        <type>Catalog Item Available for</type>
+        <update_guid>fe00699ecc320110591187e94fe4a288</update_guid>
+        <update_guid_history>fe00699ecc320110591187e94fe4a288:1682981875</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Solicitação de Visita.Any User">1fd065de2f320110090bde1a2799b6b3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-13 19:25:17</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_mtom">sc_cat_item_user_criteria_mtom</sys_db_object>
+        <sys_id>8b9eb611545b4e6990b4407da36e0919</sys_id>
+        <sys_metadata>fa00699e2f320110090bde1a2799b684</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Solicitação de Visita.Any User</sys_name>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_parent display_value="Solicitação de Visita">114715962f320110090bde1a2799b677</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_scope_delete display_value="">047510566e9f401694a53ed0dc8a55e4</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_fa00699e2f320110090bde1a2799b684</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_mtom_fa00699e2f320110090bde1a2799b684">7a00699e2f320110090bde1a2799b689</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-13 19:25:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
