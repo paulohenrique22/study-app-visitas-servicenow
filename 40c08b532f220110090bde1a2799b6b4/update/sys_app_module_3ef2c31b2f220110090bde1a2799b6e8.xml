@@ -13,7 +13,7 @@
         <mobile_title>Create New</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>cmn_location</name>
-        <order>2</order>
+        <order>20</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3ef2c31b2f220110090bde1a2799b6e8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Create New</sys_name>
         <sys_overrides/>
         <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
         <sys_update_name>sys_app_module_3ef2c31b2f220110090bde1a2799b6e8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-04-04 18:52:11</sys_updated_on>
+        <sys_updated_on>2022-04-22 17:41:45</sys_updated_on>
         <timeline_page/>
         <title>Create New</title>
         <uncancelable>false</uncancelable>
