@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs">
+    <pa_tabs action="DELETE">
+        <canvas_page/>
+        <name>Novo Dash - New Tab</name>
+        <page/>
+        <sys_class_name>pa_tabs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-29 18:18:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6f0b6bd72f030110090bde1a2799b681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Novo Dash - New Tab</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name>pa_tabs_6f0b6bd72f030110090bde1a2799b681</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-29 18:18:39</sys_updated_on>
+    </pa_tabs>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Visitas">40c08b532f220110090bde1a2799b6b4</application>
+        <file_path/>
+        <instance_id>fc7c1de7db281f047e55d5b0cf9619d6</instance_id>
+        <instance_name>dev51776</instance_name>
+        <name>pa_tabs_6f0b6bd72f030110090bde1a2799b681</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs"><pa_tabs action="INSERT_OR_UPDATE"><canvas_page/><name>Novo Dash - New Tab</name><page/><sys_class_name>pa_tabs</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-04-29 18:18:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6f0b6bd72f030110090bde1a2799b681</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Novo Dash - New Tab</sys_name><sys_overrides/><sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package><sys_policy/><sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope><sys_update_name>pa_tabs_6f0b6bd72f030110090bde1a2799b681</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-04-29 18:18:39</sys_updated_on></pa_tabs></record_update>]]></payload>
+        <payload_hash>-1973124500</payload_hash>
+        <record_name>Novo Dash - New Tab</record_name>
+        <reverted_from/>
+        <source>620507d72f220110090bde1a2799b680</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-29 20:15:25</sys_created_on>
+        <sys_id>8ec584232f830110090bde1a2799b683</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18076f6c7190000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-29 20:15:25</sys_updated_on>
+        <type>Tab</type>
+        <update_guid>a30beb1b980301101d74c6478a119658</update_guid>
+        <update_guid_history>a30beb1b980301101d74c6478a119658:-1983233718,a30beb1b980301101d74c6478a119658:-1983233718,a30beb1b980301101d74c6478a119658:-1983233718</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Novo Dash - New Tab">82c584232f830110090bde1a2799b69f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-29 20:15:26</sys_created_on>
+        <sys_db_object display_value="" name="pa_tabs">pa_tabs</sys_db_object>
+        <sys_id>0bd4273718ac4041b907c571906caeb1</sys_id>
+        <sys_metadata>6f0b6bd72f030110090bde1a2799b681</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Novo Dash - New Tab</sys_name>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_scope_delete display_value="">047510566e9f401694a53ed0dc8a55e4</sys_scope_delete>
+        <sys_update_name>pa_tabs_6f0b6bd72f030110090bde1a2799b681</sys_update_name>
+        <sys_update_version display_value="pa_tabs_6f0b6bd72f030110090bde1a2799b681">8ec584232f830110090bde1a2799b683</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-29 20:15:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
