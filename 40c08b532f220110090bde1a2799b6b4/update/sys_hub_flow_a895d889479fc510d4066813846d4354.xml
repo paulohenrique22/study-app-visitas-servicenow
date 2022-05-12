@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>update_record_visitas</internal_name>
+        <label_cache>[{"name":"subflow.data","label":"Input➛data","reference":"x_788878_snc_vst_solicitacoes","reference_display":"Solicitações","type":"records","base_type":"records","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"cff01b69-be43-44fb-8019-75efd7b4acd0"}},{"name":"db558158-ce24-4f35-a4f8-e1d129a5206e.uf","label":"1➛Uf","reference_display":"Uf","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87e31b72-ef8b-4b09-9d74-25cb858d8146"}},{"name":"db558158-ce24-4f35-a4f8-e1d129a5206e.end","label":"1➛End","reference_display":"End","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a7f76d2d-55d0-4ba3-ba9c-26f2c4f0a28f"}},{"name":"db558158-ce24-4f35-a4f8-e1d129a5206e.complemento","label":"1➛Complemento","reference_display":"Complemento","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"da442764-0e35-4c21-8585-b8b2b38b07fd"}},{"name":"db558158-ce24-4f35-a4f8-e1d129a5206e.bairro","label":"1➛Bairro","reference_display":"Bairro","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"00debc9b-eccd-4262-8afe-4132e2c57aa8"}},{"name":"db558158-ce24-4f35-a4f8-e1d129a5206e.cidade","label":"1➛Cidade","reference_display":"Cidade","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"4d9c85ef-501d-4072-81fb-df4924f780a3"}},{"name":"db558158-ce24-4f35-a4f8-e1d129a5206e.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"59f57e38-973a-40c0-a4ab-9d7b8137ab4d"}},{"name":"db558158-ce24-4f35-a4f8-e1d129a5206e.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDc018650423b2011076eaf0b8aa05e6df","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"75fbf999-a027-43c7-b2d0-db2432afc445"}},{"name":"03a4cab9-0829-444b-8827-5d37132b4911.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"03a4cab9-0829-444b-8827-5d37132b4911.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"03a4cab9-0829-444b-8827-5d37132b4911.log","label":"2➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"03a4cab9-0829-444b-8827-5d37132b4911.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"03a4cab9-0829-444b-8827-5d37132b4911.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"098189a6-a172-47b2-ab63-aeb04b251db9.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"098189a6-a172-47b2-ab63-aeb04b251db9.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"098189a6-a172-47b2-ab63-aeb04b251db9.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"098189a6-a172-47b2-ab63-aeb04b251db9.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>10c95c8d479fc510d4066813846d43fb</master_snapshot>
+        <name>Update Record Visitas</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:15:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a895d889479fc510d4066813846d4354</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Update Record Visitas</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name>sys_hub_flow_a895d889479fc510d4066813846d4354</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:40:20</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=a895d889479fc510d4066813846d4354"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a895d889479fc510d4066813846d4354"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=a895d889479fc510d4066813846d4354"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=a895d889479fc510d4066813846d4354"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=a895d889479fc510d4066813846d4354^sys_idNOT IN6c955c89479fc510d4066813846d4315"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>a895d889479fc510d4066813846d4354</id>
+        <name>Update Record Visitas</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:15:18</sys_created_on>
+        <sys_id>6c955c89479fc510d4066813846d4315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:15:18</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=6c955c89479fc510d4066813846d4315"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=a895d889479fc510d4066813846d4354^sys_idNOT IN716a58cd479fc510d4066813846d43b2"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records,uiUniqueId=cff01b69-be43-44fb-8019-75efd7b4acd0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_788878_snc_vst_solicitacoes</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>data</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>data</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Update Record Visitas">a895d889479fc510d4066813846d4354</model>
+        <model_id>a895d889479fc510d4066813846d4354</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a895d889479fc510d4066813846d4354</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_788878_snc_vst_solicitacoes">x_788878_snc_vst_solicitacoes</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:36:25</sys_created_on>
+        <sys_id>716a58cd479fc510d4066813846d43b2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:36:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=a895d889479fc510d4066813846d4354"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a895d889479fc510d4066813846d4354"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=a895d889479fc510d4066813846d4354^sys_idNOT IN3eb91c8d479fc510d4066813846d43d8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="ConsultaCep Spoke">bf0865042fb20110090bde1a2799b6ad</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Update Record Visitas">a895d889479fc510d4066813846d4354</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:33:28</sys_created_on>
+        <sys_id>3eb91c8d479fc510d4066813846d43d8</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:40:20</sys_updated_on>
+        <ui_id>db558158-ce24-4f35-a4f8-e1d129a5206e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3eb91c8d479fc510d4066813846d43d8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3eb91c8d479fc510d4066813846d43d8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:33:29</sys_created_on>
+        <sys_id>b6b91c8d479fc510d4066813846d43da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:33:29</sys_updated_on>
+        <value>13203-250</value>
+        <variable display_value="cep">7f0865042fb20110090bde1a2799b6b0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_bf0865042fb20110090bde1a2799b6ad^id=3eb91c8d479fc510d4066813846d43d8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3eb91c8d479fc510d4066813846d43d8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3eb91c8d479fc510d4066813846d43d8"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=a895d889479fc510d4066813846d4354"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=a895d889479fc510d4066813846d4354"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=a895d889479fc510d4066813846d4354"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=a895d889479fc510d4066813846d4354"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_a895d889479fc510d4066813846d4354^sys_idNOT IN466a58cd479fc510d4066813846d43bb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>data</element>
+        <help/>
+        <hint/>
+        <label>data</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a895d889479fc510d4066813846d4354</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:36:25</sys_created_on>
+        <sys_id>466a58cd479fc510d4066813846d43bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:36:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a895d889479fc510d4066813846d4354"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_a895d889479fc510d4066813846d4354"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_a895d889479fc510d4066813846d4354"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=a895d889479fc510d4066813846d4354"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=a895d889479fc510d4066813846d4354^sys_idNOT INbcc99c8d479fc510d4066813846d43b4"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@564dba</plan>
+        <plan_id display_value="Update Record Visitas">a895d889479fc510d4066813846d4354</plan_id>
+        <snapshot>10c95c8d479fc510d4066813846d43fb</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:33:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bcc99c8d479fc510d4066813846d43b4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:40:20</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>update_record_visitas</internal_name>
+        <label_cache>[{"name":"subflow.data","label":"Input➛data","reference":"x_788878_snc_vst_solicitacoes","reference_display":"Solicitações","type":"records","base_type":"records","column_name":"","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"cff01b69-be43-44fb-8019-75efd7b4acd0"}},{"name":"db558158-ce24-4f35-a4f8-e1d129a5206e.uf","label":"1➛Uf","reference_display":"Uf","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87e31b72-ef8b-4b09-9d74-25cb858d8146"}},{"name":"db558158-ce24-4f35-a4f8-e1d129a5206e.end","label":"1➛End","reference_display":"End","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a7f76d2d-55d0-4ba3-ba9c-26f2c4f0a28f"}},{"name":"db558158-ce24-4f35-a4f8-e1d129a5206e.complemento","label":"1➛Complemento","reference_display":"Complemento","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"da442764-0e35-4c21-8585-b8b2b38b07fd"}},{"name":"db558158-ce24-4f35-a4f8-e1d129a5206e.bairro","label":"1➛Bairro","reference_display":"Bairro","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"00debc9b-eccd-4262-8afe-4132e2c57aa8"}},{"name":"db558158-ce24-4f35-a4f8-e1d129a5206e.cidade","label":"1➛Cidade","reference_display":"Cidade","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"4d9c85ef-501d-4072-81fb-df4924f780a3"}},{"name":"db558158-ce24-4f35-a4f8-e1d129a5206e.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"59f57e38-973a-40c0-a4ab-9d7b8137ab4d"}},{"name":"db558158-ce24-4f35-a4f8-e1d129a5206e.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDc018650423b2011076eaf0b8aa05e6df","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"75fbf999-a027-43c7-b2d0-db2432afc445"}},{"name":"03a4cab9-0829-444b-8827-5d37132b4911.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"03a4cab9-0829-444b-8827-5d37132b4911.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"03a4cab9-0829-444b-8827-5d37132b4911.log","label":"2➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"03a4cab9-0829-444b-8827-5d37132b4911.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"03a4cab9-0829-444b-8827-5d37132b4911.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"098189a6-a172-47b2-ab63-aeb04b251db9.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"098189a6-a172-47b2-ab63-aeb04b251db9.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"098189a6-a172-47b2-ab63-aeb04b251db9.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"098189a6-a172-47b2-ab63-aeb04b251db9.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Update Record Visitas</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Update Record Visitas">a895d889479fc510d4066813846d4354</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:33:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>10c95c8d479fc510d4066813846d43fb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:40:18</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=10c95c8d479fc510d4066813846d43fb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=10c95c8d479fc510d4066813846d43fb"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=10c95c8d479fc510d4066813846d43fb"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=10c95c8d479fc510d4066813846d43fb"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=10c95c8d479fc510d4066813846d43fb^sys_idNOT INd4c95c8d479fc510d4066813846d43fc"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>10c95c8d479fc510d4066813846d43fb</id>
+        <name>Update Record Visitas</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:33:35</sys_created_on>
+        <sys_id>d4c95c8d479fc510d4066813846d43fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:33:35</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d4c95c8d479fc510d4066813846d43fc"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=10c95c8d479fc510d4066813846d43fb^sys_idNOT INee4bd04147dfc510d4066813846d43f3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records,uiUniqueId=cff01b69-be43-44fb-8019-75efd7b4acd0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_788878_snc_vst_solicitacoes</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>data</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>data</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Update Record Visitas">10c95c8d479fc510d4066813846d43fb</model>
+        <model_id>10c95c8d479fc510d4066813846d43fb</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_10c95c8d479fc510d4066813846d43fb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_788878_snc_vst_solicitacoes">x_788878_snc_vst_solicitacoes</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:40:17</sys_created_on>
+        <sys_id>ee4bd04147dfc510d4066813846d43f3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:40:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=10c95c8d479fc510d4066813846d43fb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=10c95c8d479fc510d4066813846d43fb"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=10c95c8d479fc510d4066813846d43fb^sys_idNOT INe8c99c8d479fc510d4066813846d434d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="ConsultaCep Spoke">bf0865042fb20110090bde1a2799b6ad</action_type>
+        <action_type_parent display_value="ConsultaCep Spoke">c20168772f620110090bde1a2799b698</action_type_parent>
+        <comment/>
+        <compiled_snapshot>bf0865042fb20110090bde1a2799b6ad</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Update Record Visitas">10c95c8d479fc510d4066813846d43fb</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:33:35</sys_created_on>
+        <sys_id>e8c99c8d479fc510d4066813846d434d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:40:18</sys_updated_on>
+        <ui_id>db558158-ce24-4f35-a4f8-e1d129a5206e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e8c99c8d479fc510d4066813846d434d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e8c99c8d479fc510d4066813846d434d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:33:35</sys_created_on>
+        <sys_id>a8c99c8d479fc510d4066813846d434e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:33:35</sys_updated_on>
+        <value>13203-250</value>
+        <variable display_value="cep">7f0865042fb20110090bde1a2799b6b0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_bf0865042fb20110090bde1a2799b6ad^id=e8c99c8d479fc510d4066813846d434d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e8c99c8d479fc510d4066813846d434d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e8c99c8d479fc510d4066813846d434d"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=10c95c8d479fc510d4066813846d43fb"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=10c95c8d479fc510d4066813846d43fb"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=10c95c8d479fc510d4066813846d43fb"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=10c95c8d479fc510d4066813846d43fb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_10c95c8d479fc510d4066813846d43fb^sys_idNOT INa64b144147dfc510d4066813846d4300"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>data</element>
+        <help/>
+        <hint/>
+        <label>data</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_10c95c8d479fc510d4066813846d43fb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:40:17</sys_created_on>
+        <sys_id>a64b144147dfc510d4066813846d4300</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:40:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_10c95c8d479fc510d4066813846d43fb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_10c95c8d479fc510d4066813846d43fb"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_10c95c8d479fc510d4066813846d43fb"/>
+    <sys_hub_flow action="update">
+        <sys_id>a895d889479fc510d4066813846d4354</sys_id>
+        <latest_snapshot>10c95c8d479fc510d4066813846d43fb</latest_snapshot>
+    </sys_hub_flow>
+</record_update>

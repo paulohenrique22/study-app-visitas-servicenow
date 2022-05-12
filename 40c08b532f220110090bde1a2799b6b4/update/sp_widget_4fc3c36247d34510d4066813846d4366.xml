@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope, spUtil, $http) {
+    /* widget controller */
+    var c = this;
+		
+		
+
+
+    $scope.download = function() {
+        //Put your code over here		
+				alert('clicou')
+
+        var inputs = {};
+
+        inputs.cep = "13203250";
+
+				$http({
+						method: "POST",
+						url: "https://iveetecnologialtdademo2.service-now.com/api/ivta/initialize_spoke/initialize_the_spoke",
+						headers: { "Content-type": "application/json" },
+						data: {
+								"cep": "13203-250"
+						}
+				}).then(function success(response) {
+						spUtil.addTrivialMessage('Success');
+						// console.log('Deu certo!')
+					  console.log('response=' + JSON.stringify(response.data.result, null, 4))
+
+				}, function failure(response) {
+						spUtil.addErrorMessage('Severe error');
+						// console.log('response=' + JSON.stringify(response, null, 4))
+				});
+
+
+
+
+				
+	
+    };
+	
+		$scope.fakeDownload = function() {
+			
+			
+		};
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border:1px solid #CCC;
+  border-radius:5px;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px 10px;
+}
+
+.btn {
+  background-color: #388477;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #155b51;
+  border-color: #0f3e37;
+}
+
+.flex {
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>holerite_download</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+
+}]]></link>
+        <name>Holerite download</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	
+	data.userName = gs.getUserDisplayName();
+
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-09 17:47:24</sys_created_on>
+        <sys_id>4fc3c36247d34510d4066813846d4366</sys_id>
+        <sys_mod_count>84</sys_mod_count>
+        <sys_name>Holerite download</sys_name>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name>sp_widget_4fc3c36247d34510d4066813846d4366</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-11 13:06:45</sys_updated_on>
+        <template><![CDATA[<div>
+  <div class="card">
+    <div class="container">
+      <h2>Olá<strong> {{ c.data.userName }}</strong>, gostaria de consultar seu holerite?</h2>
+      <p>
+        Para consultar basta clicar no botão de abaixo.
+      </p>
+    	<button class="btn" ng-click="download()" style="width:100%"><i class="fa fa-download"></i> Download</button>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

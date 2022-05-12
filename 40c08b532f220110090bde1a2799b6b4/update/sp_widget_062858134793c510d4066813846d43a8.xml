@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope,spUtil) {
+  /* widget controller */
+  var c = this;
+	
+	console.log(c);
+	
+	c.data.insert = false;
+	
+$scope.add = function(visit) {
+		console.log(c.data);
+		c.data.insert = true;
+		
+		c.server.update().then(function(){
+
+			c.data = {};
+			$('#identificador').select2('val','');
+			$('#user').select2('val','');
+			$('#location').select2('val','');
+			
+		});
+
+}
+
+	
+$scope.identificador = {
+		displayValue: c.data.identificador,
+		value: c.data.sys_id,
+		name: 'identificador'
+};
+
+$scope.location = {
+	 displayValue: c.data.name,
+	 value: c.data.sys_id,
+	 name: 'location'
+};
+	
+$scope.user = {
+	 displayValue: c.data.name,
+	 value: c.data.sys_id,
+	 name: 'user'
+};
+	
+
+$scope.$on("field.change", function(evt, parms) {
+	console.log(parms);
+	console.log(c);
+	
+  if (parms.field.name == 'identificador'){
+		console.log('caiu no if visitantes');
+		c.data.sys_id = parms.newValue;
+	}
+
+	if (parms.field.name == 'location'){
+		console.log('caiu no if location');
+		c.data.location_id = parms.newValue;
+	}
+	
+	if (parms.field.name == 'user'){
+		console.log('caiu no if user');
+		c.data.assign_to = parms.newValue;
+	}
+	
+	c.server.update().then(function(response) {         
+		spUtil.update($scope);
+	});
+
+});
+	
+	
+	
+
+
+	
+	
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>form_test</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Form test</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+  if (!input)
+		return;
+
+	console.log('<--- SERVER ---->');
+  console.log(input);
+	console.log('<--- SERVER ---->');
+	
+	var gr = new GlideRecord('x_788878_snc_vst_cadastro_visitantes');
+
+	if (!input.sys_id)
+		return;
+
+	gr.addQuery('sys_id','=',input.sys_id);
+	gr.query();
+	
+	while(gr.next()){
+		
+		data.sys_id = gr.getUniqueValue();
+		data.name = gr.getDisplayValue('nome');
+		data.email = gr.getDisplayValue('e_mail');
+		data.telefone = gr.getDisplayValue('telefone');
+		data.empresa = gr.getDisplayValue('empresa');
+
+	}
+	
+	if(input.insert == true){
+		var gr2 = new GlideRecord('x_788878_snc_vst_solicitacoes');	
+		gr2.initialize();
+		
+		gr2.visitante = data.sys_id;
+		gr2.u_start_date = input.start_date;
+		gr2.u_end_date = input.end_date;
+		gr2.assigned_to = input.assign_to;
+		gr2.localidade = input.location_id;
+
+		gr2.insert();
+		
+	}
+	
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-11 13:12:55</sys_created_on>
+        <sys_id>062858134793c510d4066813846d43a8</sys_id>
+        <sys_mod_count>164</sys_mod_count>
+        <sys_name>Form test</sys_name>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name>sp_widget_062858134793c510d4066813846d43a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-12 12:32:29</sys_updated_on>
+        <template><![CDATA[<div>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+              <strong>Solicitação de visitas</strong>
+          	</div>
+            <div class="panel-body">
+                <div class="form1">
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Visitante</label>
+                        <sn-record-picker id="identificador" field="identificador" table="'x_788878_snc_vst_cadastro_visitantes'"
+                            display-field="'identificador'" value-field="'sys_id'" search-fields="'identificador'"
+                            page-size="100">
+                        </sn-record-picker>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="nameHelp" ng-model="c.data.name" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="text" class="form-control" id="email" aria-describedby="emailHelp" ng-model="c.data.email" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Telefone</label>
+                        <input type="text" class="form-control" id="telefone" aria-describedby="telefoneHelp" ng-model="c.data.telefone" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Empresa</label>
+                        <input type="text" class="form-control" id="empresa" aria-describedby="empresaHelp" ng-model="c.data.empresa" readonly>
+                    </div>
+                  
+                  	<div class="form-group">
+                        <label for="name">Data de Entrada</label>
+                        <input type="datetime-local" class="form-control" id="startDate" aria-describedby="startDateHelp" ng-model="c.data.start_date">
+                    </div>
+
+                  	<div class="form-group">
+                        <label for="name">Data de Saida</label>
+                        <input type="datetime-local" class="form-control" id="endDate" aria-describedby="endDateHelp" ng-model="c.data.end_date">
+                    </div>
+                  
+                  	<div class="form-group">
+                        <label for="name">Responsável</label>
+                        <sn-record-picker 
+                          id="user"
+													field="user" 
+													table="'sys_user'" 
+													display-field="'name'" 
+													value-field="'sys_id'" 
+													search-fields="'name'" 
+													page-size="100">
+												</sn-record-picker>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Localidade</label>
+												<sn-record-picker 
+                          id="location"
+													field="location" 
+													table="'cmn_location'" 
+													display-field="'name'" 
+													value-field="'sys_id'" 
+													search-fields="'name'" 
+													page-size="100">
+												</sn-record-picker>
+
+                    </div>
+
+
+                  
+                  
+
+                    <button type="button" class="btn btn-primary" ng-click="add(c.data)">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
