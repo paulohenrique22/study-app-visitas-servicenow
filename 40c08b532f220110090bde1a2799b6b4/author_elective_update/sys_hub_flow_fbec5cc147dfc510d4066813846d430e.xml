@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>test2visitas</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>test2-visitas</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:47:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fbec5cc147dfc510d4066813846d430e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test2-visitas</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name>sys_hub_flow_fbec5cc147dfc510d4066813846d430e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:47:28</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=fbec5cc147dfc510d4066813846d430e"/>
+    <sys_variable_value action="DELETE" query="document_key=fbec5cc147dfc510d4066813846d430e"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=fbec5cc147dfc510d4066813846d430e^sys_idNOT INb3ec5cc147dfc510d4066813846d4310"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>fbec5cc147dfc510d4066813846d430e</id>
+        <name>test2-visitas</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:47:28</sys_created_on>
+        <sys_id>b3ec5cc147dfc510d4066813846d4310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:47:28</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Visitas">40c08b532f220110090bde1a2799b6b4</application>
+        <file_path/>
+        <instance_id>29171501db550910a667cac505961956</instance_id>
+        <instance_name>iveetecnologialtdademo2</instance_name>
+        <name>sys_hub_flow_fbec5cc147dfc510d4066813846d430e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description/><internal_name>test2visitas</internal_name><label_cache>[]</label_cache><latest_snapshot/><master_snapshot/><name>test2-visitas</name><natlang/><outputs/><remote_trigger_id/><run_as>system</run_as><run_with_roles/><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-04 13:47:28</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fbec5cc147dfc510d4066813846d430e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>test2-visitas</sys_name><sys_overrides/><sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package><sys_policy/><sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope><sys_update_name>sys_hub_flow_fbec5cc147dfc510d4066813846d430e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-04 13:47:28</sys_updated_on><type>flow</type></sys_hub_flow><sys_translated_text action="delete_multiple" query="documentkey=fbec5cc147dfc510d4066813846d430e"/><sys_variable_value action="delete_multiple" query="document_key=fbec5cc147dfc510d4066813846d430e"/><sys_flow_cat_variable_model action="delete_multiple" query="id=fbec5cc147dfc510d4066813846d430e^sys_idNOT INb3ec5cc147dfc510d4066813846d4310"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>fbec5cc147dfc510d4066813846d430e</id><name>test2-visitas</name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-04 13:47:28</sys_created_on><sys_id>b3ec5cc147dfc510d4066813846d4310</sys_id><sys_mod_count>0</sys_mod_count><sys_scope/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-04 13:47:28</sys_updated_on></sys_flow_cat_variable_model></record_update>]]></payload>
+        <payload_hash>-1891070129</payload_hash>
+        <record_name>test2-visitas</record_name>
+        <reverted_from/>
+        <source>90a6e8ff470fc110d4066813846d4352</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-04 13:47:28</sys_created_on>
+        <sys_id>7fec5cc147dfc510d4066813846d4313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1808f5362bf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-04 13:47:28</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>b7ec5cc127dfc5109cb33b7313d20f13</update_guid>
+        <update_guid_history>b7ec5cc127dfc5109cb33b7313d20f13:-1891070129</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-11 12:09:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>098173081f064a8094f67a92f7c71f49</sys_id>
+        <sys_metadata>fbec5cc147dfc510d4066813846d430e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test2-visitas</sys_name>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_scope_delete display_value="">047510566e9f401694a53ed0dc8a55e4</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_fbec5cc147dfc510d4066813846d430e</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_fbec5cc147dfc510d4066813846d430e">7fec5cc147dfc510d4066813846d4313</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-11 12:09:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

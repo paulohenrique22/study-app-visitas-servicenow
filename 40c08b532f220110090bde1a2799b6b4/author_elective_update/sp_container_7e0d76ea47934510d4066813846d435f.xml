@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>holerite - Test Page - Container 2</name>
+        <order>2</order>
+        <sp_page display_value="holerite">2f4eed4147170910d4066813846d433e</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-09 17:17:53</sys_created_on>
+        <sys_id>7e0d76ea47934510d4066813846d435f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>holerite - Test Page - Container 2</sys_name>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name>sp_container_7e0d76ea47934510d4066813846d435f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-09 17:17:53</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Visitas">40c08b532f220110090bde1a2799b6b4</application>
+        <file_path/>
+        <instance_id>29171501db550910a667cac505961956</instance_id>
+        <instance_name>iveetecnologialtdademo2</instance_name>
+        <name>sp_container_7e0d76ea47934510d4066813846d435f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>holerite - Test Page - Container 2</name><order>2</order><sp_page display_value="holerite">2f4eed4147170910d4066813846d433e</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-09 17:17:53</sys_created_on><sys_id>7e0d76ea47934510d4066813846d435f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>holerite - Test Page - Container 2</sys_name><sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package><sys_policy/><sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope><sys_update_name>sp_container_7e0d76ea47934510d4066813846d435f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-09 17:17:53</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>-1736268908</payload_hash>
+        <record_name>holerite - Test Page - Container 2</record_name>
+        <reverted_from/>
+        <source>90a6e8ff470fc110d4066813846d4352</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-09 17:17:54</sys_created_on>
+        <sys_id>b60d76ea47934510d4066813846d4362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>180a9d3d6040000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-09 17:17:54</sys_updated_on>
+        <type>Container</type>
+        <update_guid>fe0d76eaa9934510d11d995cf4071e61</update_guid>
+        <update_guid_history>fe0d76eaa9934510d11d995cf4071e61:-1736268908</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="holerite - Test Page - Container 2">d6ba192747d349108b736848946d4398</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-12 12:42:15</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>52455af6911243ba8af4eb2547c963e4</sys_id>
+        <sys_metadata>7e0d76ea47934510d4066813846d435f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>holerite - Test Page - Container 2</sys_name>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_scope_delete display_value="">047510566e9f401694a53ed0dc8a55e4</sys_scope_delete>
+        <sys_update_name>sp_container_7e0d76ea47934510d4066813846d435f</sys_update_name>
+        <sys_update_version display_value="sp_container_7e0d76ea47934510d4066813846d435f">b60d76ea47934510d4066813846d4362</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-12 12:42:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

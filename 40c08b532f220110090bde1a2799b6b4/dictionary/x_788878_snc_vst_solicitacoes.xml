@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Solicitações" max_length="40" name="x_788878_snc_vst_solicitacoes" sizeclass="20" type="collection">
+    <element audit="true" extends="task" label="Solicitações" max_length="40" name="x_788878_snc_vst_solicitacoes" sizeclass="32" type="collection">
         <element attributes="encode_utf8=false" label="Localidade" max_length="32" name="localidade" reference="cmn_location" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Situação" max_length="40" name="situacao" read_only="true" type="string">
             <choice>
@@ -10,14 +10,8 @@
                 <element inactive_on_update="false" label="Concluido" sequence="4" value="5"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" max_length="40" name="u_choice_1" type="string">
-            <choice>
-                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
-                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
-                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
-            </choice>
-        </element>
         <element attributes="edge_encryption_enabled=true" label="Data da Saida" max_length="40" name="u_end_date" type="glide_date_time"/>
+        <element default="0" label="Qtd. visitantes" max_length="40" name="u_qtd_visitantes" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Data da Entrada" max_length="40" name="u_start_date" type="glide_date_time"/>
         <element attributes="encode_utf8=false" label="Visitante" max_length="32" name="visitante" reference="x_788878_snc_vst_cadastro_visitantes" type="reference"/>
     </element>

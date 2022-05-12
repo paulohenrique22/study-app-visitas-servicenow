@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>2</order>
+        <size>6</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">14dd322e47934510d4066813846d43a0</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-09 17:21:16</sys_created_on>
+        <sys_id>90dd322e47934510d4066813846d43a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2</sys_name>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_update_name>sp_column_90dd322e47934510d4066813846d43a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-09 17:21:16</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Visitas">40c08b532f220110090bde1a2799b6b4</application>
+        <file_path/>
+        <instance_id>29171501db550910a667cac505961956</instance_id>
+        <instance_name>iveetecnologialtdademo2</instance_name>
+        <name>sp_column_90dd322e47934510d4066813846d43a4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>2</order><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">14dd322e47934510d4066813846d43a0</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-09 17:21:16</sys_created_on><sys_id>90dd322e47934510d4066813846d43a4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>2</sys_name><sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package><sys_policy/><sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope><sys_update_name>sp_column_90dd322e47934510d4066813846d43a4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-09 17:21:16</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>-1301148733</payload_hash>
+        <record_name>2</record_name>
+        <reverted_from/>
+        <source>90a6e8ff470fc110d4066813846d4352</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-09 17:21:16</sys_created_on>
+        <sys_id>98dd322e47934510d4066813846d43a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>180a9d6ee290000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-09 17:21:16</sys_updated_on>
+        <type>Column</type>
+        <update_guid>d0dd322e91934510721b45199253cda5</update_guid>
+        <update_guid_history>d0dd322e91934510721b45199253cda5:-1301148733</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="2">f52cbb7247d38510d4066813846d43d2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-10 16:32:06</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>03c10aa3c55f41ec91e48f32a6870390</sys_id>
+        <sys_metadata>90dd322e47934510d4066813846d43a4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2</sys_name>
+        <sys_package display_value="Visitas" source="x_788878_snc_vst">40c08b532f220110090bde1a2799b6b4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Visitas">40c08b532f220110090bde1a2799b6b4</sys_scope>
+        <sys_scope_delete display_value="">047510566e9f401694a53ed0dc8a55e4</sys_scope_delete>
+        <sys_update_name>sp_column_90dd322e47934510d4066813846d43a4</sys_update_name>
+        <sys_update_version display_value="sp_column_90dd322e47934510d4066813846d43a4">98dd322e47934510d4066813846d43a5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-10 16:32:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
